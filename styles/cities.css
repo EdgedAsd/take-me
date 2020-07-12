@@ -1,0 +1,53 @@
+.cities {
+	background-color: #fff;
+	height: 45vw;
+	margin-top: 20px;
+	width: 100%;
+}
+
+ul.cities_list {
+	padding-top: 6vw;
+	width: 84%;
+	margin: auto;
+	/*height: 475px;*/
+	height: 34vw;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+ul.cities_list li {
+	height: 100%;
+	width: 26vw;
+	font-family: Roboto, sans-serif;
+}
+
+ul.cities_list li a {
+	width: 100%;
+	height: 100%;
+	color: #868686;
+	display: block;
+}
+
+ul.cities_list li img {
+	width: 100%;
+	display: block;
+}
+
+ul.cities_list li h4 {
+	margin: 20px 0;
+	font-size: 2.2em;
+	color: #343434;
+}
+
+ul.cities_list li p {
+	font-size: 1.2em;
+	margin-bottom: 40px;
+}
+
+ul.cities_list li i {
+	color: #fa9d4c;
+}
