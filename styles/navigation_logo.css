@@ -1,0 +1,115 @@
+.header_logo_navigation {
+	height: 115px;
+	width: 100%;
+	background-color: #fff;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+h1.logo {
+	font-family: Kaushan, arial;
+	color: #3ec6ff;
+	display: flex;
+	margin: auto 0 auto 8%;
+	font-size: 2.7em;
+}
+
+.navigation {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: auto 8% auto 0;
+	width: 57%;
+}
+
+.navigation ul {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navigation ul li {
+	margin-left: 6%;
+}
+
+.navigation ul li:first-child {
+	margin-left: 0;
+}
+
+.navigation li a {
+	font-family: Roboto, sans-serif;
+	font-size: 100%;
+}
+
+.navigation li a:hover {
+	color: #3ec6ff;
+}
+
+
+@media (max-width: 1250px) {
+	.navigation li a {
+		font-size: 90%;
+	}
+	.navigation {
+		width: 65%;
+	}
+}
+
+@media (max-width: 1000px) {
+	h1.logo {
+		margin: auto 0 auto 2%;
+		font-size: 2em;
+	}
+	.navigation {
+		margin: auto 4% auto 0;
+		width: 75%;
+	}
+
+	.navigation ul li {
+		margin-left: 3%;
+	}
+}
+
+@media (max-width: 767px) {
+	.header_logo_navigation {
+		height: 90px;
+	}
+
+	h1.logo {
+		font-size: 1.4em;
+	}
+
+	.navigation ul li a {
+		font-size: 75%;
+	}
+}
+
+@media (max-width: 600px) {
+	.navigation ul li {
+		margin-left: 1%;
+	}
+
+	.navigation {
+		width: 80%;
+		margin: auto 2% auto 0;
+	}
+
+	h1.logo {
+		font-size: 1em;
+	}
+
+	.navigation ul li a {
+		font-size: 65%;
+	}
+}

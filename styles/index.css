@@ -1,0 +1,32 @@
+@font-face {
+	font-family: "Kaushan";
+	src: url("../fonts/kaushan_script.ttf");
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/roboto.ttf");
+}
+
+html, body {
+	width: 100%;	
+	height: 100%;	
+}
+
+body {
+	background-color: #d7d7d7;
+}
+
+* {
+	margin: 0;	
+	padding: 0;	
+}
+
+ul, ol {
+	list-style: none;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}

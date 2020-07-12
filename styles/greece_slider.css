@@ -1,0 +1,131 @@
+.greece_slider {
+	background-color: #fff;
+	height: 600px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.slider_text {
+	padding-top: 150px;
+	margin-left: 8%;
+	width: 29%;
+	float: left;
+}
+
+.slider_text h2, .slider_text h6 {
+	font-family: Roboto, sans-serif;
+	color: #868686;
+}
+
+.slider_text h2 {
+	font-weight: 600;
+	font-size: 3em;
+}
+
+.slider_text h6 {
+	margin-top: 45px;
+	font-weight: 600;
+	font-size: 1em;
+}
+
+.slider_text a {
+	width: 67%;
+	background-color: #3ec6ff;
+	font-family: Roboto, sans-serif;
+	color: #fff;
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 8px;
+}
+
+.slider {
+	overflow: hidden;
+	float: right;
+	width: 50%;
+	margin-top: 45px;
+	height: 500px;
+}
+
+.slider ul {
+	width: 100%;
+	height: 420px;
+	width: 9999px;
+	transition: 1s;
+}
+
+.slider ul li {
+	display: inline-block;
+	width: 16vw;
+	height: 100%;
+}
+
+#image1 {
+	background: url('../images/santorini1.jpg') top center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#image2 {
+	background: url('../images/santorini2.jpg') top center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#image3 {
+	background: url('../images/santorini3.jpg') top center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#image4 {
+	background: url('../images/santorini4.jpg') top center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#image5 {
+	background: url('../images/santorini5.jpg') top center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#image6 {
+	background: url('../images/santorini6.jpg') top center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#image7 {
+	background: url('../images/santorini7.jpg') top center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#image8 {
+	background: url('../images/santorini8.jpg') top center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.points {
+	margin-top: 50px;
+}
+
+.point {
+	width: 10px;
+	height: 10px;
+	background-color: #868686;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 10px;
+	border: none;
+	outline: none;
+}
+
+.active_point {
+	border: solid 2px #3ec6ff !important;
+	background-color: #fff !important;
+}

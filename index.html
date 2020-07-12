@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Take me</title>
+
+	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="styles/navigation_logo.css">
+	<link rel="stylesheet" href="styles/search.css">
+	<link rel="stylesheet" href="styles/greece_slider.css">
+</head>
+<body>
+		
+	<header class="header_logo_navigation">
+		<h1 class="logo">TakeMe</h1>
+		<nav class="navigation">
+			<ul>
+				<li>
+					<a href="">Location</a>
+				</li>
+				<li>
+					<a href="">Accomodation</a>
+				</li>
+				<li>
+					<a href="">Travel Guides</a>
+				</li>
+				<li>
+					<a href="">Where To Stay</a>
+				</li>
+				<li>
+					<a href="">Contact&nbsp;Us</a>
+				</li>
+				<li>
+					<a href="">Log&nbsp;In</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<header class="header_search">
+		<div class="header_text">
+			<h2>Find Your Dream Vacation Location</h2>
+			<h6>Search hundreds of locations from around the world and find your perfect vacation location</h6>
+		</div>
+		<form action="" class="search_form">
+			<input type="text" id="country" placeholder="Country or ZIP code">
+			<input type="text" id="transport" placeholder="Transportation">
+			<input type="text" id="people" placeholder="Number of people">
+			<input type="submit" value="Search" id="search">
+		</form>
+	</header>
+
+	<section class="greece_slider">
+		<div class="slider_text">
+			<h2>Magical Santorini Greece’s Jewel</h2>
+			<h6>Candy-colored houses carved into cliffs, sapphire waters, 
+				gleaming white buildings topped with half-spheres<br />
+				the color of a stormy sky</h6>
+			<a href="">Explore more</a>
+		</div>
+		<div class="slider">
+			<ul>
+				<li id="image1"></li>
+				<li id="image2"></li>
+				<li id="image3"></li>
+				<li id="image4"></li>
+				<li id="image5"></li>
+				<li id="image6"></li>
+				<li id="image7"></li>
+				<li id="image8"></li>
+			</ul>
+
+			<div class="points"></div>
+		</div>
+	</section>
+
+</body>
+
+<script>
+	
+	// Slider
+	let slider_point = 0;
+	let slider = document.querySelector('.slider ul');
+	let images = Array.prototype.slice.call(slider.children, 0);  // Collection to array
+	let margin_right = 1;
+	images = images.map((img) => {
+		img.style.marginRight = margin_right+'vw';
+		return img;
+	});
+	images[0].style.marginLeft = '0';
+
+	// Slider points 
+	let points = document.getElementsByClassName('points')[0];
+
+	for (let pt = 0; pt <= images.length-3; pt++) {
+		let new_point = document.createElement('button');
+		new_point.classList.add('point');
+		new_point.onclick = function() {
+			slider_point = points_classes.indexOf(this);
+			slide();
+			clearInterval(sliderTimer);
+			sliderTimer = setInterval(slide, 2000);
+		}
+		points.append(new_point);
+	}
+
+	let points_classes = Array.prototype.slice.call(points.children, 0);
+
+	function slide() {
+		if (slider_point>5) {
+			slider_point = 0;
+		}
+		let pos = -slider_point*(margin_right+images[0].offsetWidth/document.body.clientWidth*100);
+		slider.style.marginLeft = pos+'vw';
+		points_classes = points_classes.map((pt) => {
+			pt.classList.remove('active_point');
+			return pt;
+		})
+		points.children[slider_point].classList.add('active_point');
+		slider_point++;
+	}
+
+	let sliderTimer = setInterval(slide, 2000);
+
+</script>
+</html>
