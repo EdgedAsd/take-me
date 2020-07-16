@@ -141,22 +141,55 @@
 </body>
 
 <script>
+
+	window.onresize = function() {
+		if (document.body.clientWidth <= 767) {
+			images_on_screen = 2;
+		}
+		else {
+			images_on_screen = 3;
+		}
+		setSizes();
+	}
+
+	function setSizes() {
+		let slider_wrapper = document.querySelector('.slider');
+		imageMargin = slider_wrapper.offsetWidth/100;
+		images.forEach((img, num, images) => {
+			img.style.width = slider_wrapper.offsetWidth/images_on_screen + 'px';
+			img.style.marginRight = imageMargin + 'px';
+		});
+		
+		if (document.body.clientWidth <= 1024) {
+			slider.style.height = '250px';
+		}
+		else if (document.body.clientWidth < 1100) {
+			slider.style.height = '340px';
+		}
+		else if (document.body.clientWidth < 1200) {
+			slider.style.height = '380px';
+		}
+		else if (document.body.clientWidth < 1250) {
+			slider.style.height = '400px';
+		}
+		else {
+			slider.style.height = '420px';
+		}
+	}
 	
 	// Slider
 	let slider_point = 0;
+	let images_on_screen = 3;
 	let slider = document.querySelector('.slider ul');
 	let images = Array.prototype.slice.call(slider.children, 0);  // Collection to array
-	let margin_right = 1;
-	images = images.map((img) => {
-		img.style.marginRight = margin_right+'vw';
-		return img;
-	});
-	images[0].style.marginLeft = '0';
+	let imageMargin;
+
+	setSizes();
 
 	// Slider points 
 	let points = document.getElementsByClassName('points')[0];
 
-	for (let pt = 0; pt <= images.length-3; pt++) {
+	for (let pt = 0; pt <= images.length-images_on_screen; pt++) {
 		let new_point = document.createElement('button');
 		new_point.classList.add('point');
 		new_point.onclick = function() {
@@ -174,8 +207,8 @@
 		if (slider_point>5) {
 			slider_point = 0;
 		}
-		let pos = -slider_point*(margin_right+images[0].offsetWidth/document.body.clientWidth*100);
-		slider.style.marginLeft = pos+'vw';
+		let pos = -slider_point*(imageMargin + images[0].offsetWidth);
+		slider.style.marginLeft = pos+'px';
 		points_classes = points_classes.map((pt) => {
 			pt.classList.remove('active_point');
 			return pt;

@@ -46,7 +46,6 @@
 	float: right;
 	width: 50%;
 	margin-top: 45px;
-	height: 500px;
 }
 
 .slider ul {
@@ -54,11 +53,11 @@
 	height: 420px;
 	width: 9999px;
 	transition: 1s;
+	font-size: 0;
 }
 
 .slider ul li {
 	display: inline-block;
-	width: 16vw;
 	height: 100%;
 }
 
@@ -128,4 +127,102 @@
 .active_point {
 	border: solid 2px #3ec6ff !important;
 	background-color: #fff !important;
+}
+
+
+
+@media (max-width: 1330px) {
+	.slider_text {
+		padding-top: 100px;
+	}
+}
+
+@media (max-width: 1130px) {
+	.greece_slider {
+		height: 500px;
+	}
+
+	.slider_text {
+		padding-top: 50px;
+	}
+
+	.slider_text h2 {
+		font-size: 2.6em;
+	}
+
+	.slider_text h6 {
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.greece_slider {
+		height: 540px;
+	}
+
+	.slider_text {
+		float: none;
+		padding-top: 20px;
+		width: 100%;
+		margin: 0;
+	}
+
+	.slider_text h2 {
+		font-size: 2.4em;
+		text-align: center;
+	}
+
+	.slider_text h6 {
+		padding: 0 5%;
+		margin-top: 20px;
+		font-size: 1em;
+		text-align: center;
+	}
+
+	.slider_text a {
+		margin: auto;
+		margin-top: 20px;
+		width: 40%;
+	}
+
+	.slider {
+		float: none;
+		width: 80%;
+		margin: 20px auto 0 auto;
+	}
+
+	.points {
+		margin: 20px auto;
+		text-align: center;
+		clear: both;
+	}
+}
+
+@media (max-width: 768px) {
+	.greece_slider {
+		height: 520px;
+	}
+
+	.slider_text h2 {
+		font-size: 2em;
+	}
+
+	.slider_text h6 {
+		font-size: .8em;
+	}
+
+	.slider_text a {
+		height: 35px;
+		line-height: 35px;
+	}
+}
+
+@media (max-width: 768px) {
+	.slider_text h2 {
+		font-size: 1.7em;
+	}
+
+	.slider_text h6 {
+		font-size: .7em;
+	}
 }
