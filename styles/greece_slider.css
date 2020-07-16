@@ -217,7 +217,7 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
 	.slider_text h2 {
 		font-size: 1.7em;
 	}
