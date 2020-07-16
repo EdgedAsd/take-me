@@ -226,3 +226,10 @@
 		font-size: .7em;
 	}
 }
+
+@media (max-width: 375px) {
+	.slider_text a {
+		height: 25px;
+		line-height: 25px;
+	}
+}
