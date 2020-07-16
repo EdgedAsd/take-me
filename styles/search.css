@@ -73,58 +73,34 @@
 }
 
 
-@media (max-width: 1000px) {
-	.header_text h2 {
-		font-size: 290%;
-	}
-
-	.header_text h6 {
-		font-size: 100%;
-	}
-
-	.search_form input {
-		height: 40px;
-	}
-}
-
-
 @media (max-width: 767px) {
 	.header_search {
-		height: 510px;
+		height: 410px;
+		-webkit-background-size: cover;
+		background-size: cover;
 	}
 
 	.header_text {
-		padding-top: 165px;
-		color: #fff;
+		padding-top: 50px;
 	}
 
 	.header_text h2 {
-		font-size: 230%;
+		font-size: 2.2em;
 	}
 
 	.header_text h6 {
-		font-size: 80%;
+		font-size: 1.1em;
+		margin-top: 25px;
 	}
 
 	.search_form {
-		width: 92%;
-		display: block;
-		margin: 80px auto 0 auto;
+		margin-top: 25px;
 	}
 
 	.search_form input {
+		width: 70% !important;
+		display: block;
+		margin: 10px 15%;
 		height: 30px;
-		line-height: 30px;
-	}
-
-	#country {
-		width: 28%;
-	}
-
-	:-moz-placeholder {
-		font-size: .7em;
-	}
-	::-webkit-input-placeholder {
-		font-size: .7em;
 	}
 }
