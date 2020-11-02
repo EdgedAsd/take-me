@@ -58,7 +58,7 @@
 			<h2>Find Your Dream Vacation Location</h2>
 			<h6>Search hundreds of locations from around the world and find your perfect vacation location</h6>
 		</div>
-		<form action="" class="search_form">
+		<form class="search_form">
 			<input type="text" id="country" placeholder="Country or ZIP code">
 			<input type="text" id="transport" placeholder="Transportation">
 			<input type="text" id="people" placeholder="Number of people">
@@ -226,27 +226,27 @@
 	<section class="contact_form_section" id="contact_form">
 		<div class="contact_form">
 			<h2 class="form_title">Contact Us</h2>
-			<form action="">
+			<form>
 				<ul>
 					<li>
-						<label for="">First Name</label>
-						<input type="text" placeholder="First Name">
+						<label for="first_name">First Name</label>
+						<input type="text" placeholder="First Name" id="first_name">
 					</li>
 					<li>
-						<label for="">Last Name</label>
-						<input type="text" placeholder="Last Name">
+						<label for="last_name">Last Name</label>
+						<input type="text" placeholder="Last Name" id="last_name">
 					</li>
 					<li>
-						<label for="">Email</label>
-						<input type="text" placeholder="Email">
+						<label for="email">Email</label>
+						<input type="text" placeholder="Email" id="email">
 					</li>
 					<li>
-						<label for="">Phone</label>
-						<input type="text" placeholder="Phone">
+						<label for="phone">Phone</label>
+						<input type="text" placeholder="Phone" id="phone">
 					</li>
 					<li>
-						<label for="">Message</label>
-						<input type="text" placeholder="Message">
+						<label for="message">Message</label>
+						<input type="text" placeholder="Message" id="message">
 					</li>
 				</ul>
 				<input type="submit" class="send_btn" value="Send">
@@ -293,9 +293,9 @@
 			</ul>
 			<div class="stay_in_touch">
 				<h6>Stay In Touch</h6>
-				<form action="">
+				<form>
 					<input type="text" class="email_contact" placeholder="Your Email">
-					<input type="submit" name="" id="send_btn_email" value="Subscribe">
+					<input type="submit" id="send_btn_email" value="Subscribe">
 				</form>
 				<ul class="social">
 					<li>
@@ -313,21 +313,20 @@
 				</ul>
 			</div>
 		</div>
-		<footer class="footer_meta">
+		<div class="footer_meta">
 			<p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 TakeMe Free UI Kit</p>
 			<ul class="meta_links">
 				<li><a href="">Privacy Policy</a></li>
 				<li><a href="">Terms Of Use</a></li>
 				<li><a href="">Cookies Policy</a></li>
 			</ul>
-		</footer>
+		</div>
 	</footer>
 
+	<script src="scripts/important.js"></script>
+	<script src="scripts/header_nav_list.js"></script>
+	<script src="scripts/greece_slider.js"></script>
+	<script src="scripts/activity_slider.js"></script>
+
 </body>
-
-<script type="text/javascript" src="scripts/important.js"></script>
-<script type="text/javascript" src="scripts/header_nav_list.js"></script>
-<script type="text/javascript" src="scripts/greece_slider.js"></script>
-<script type="text/javascript" src="scripts/activity_slider.js"></script>
-
 </html>
