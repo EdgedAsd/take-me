@@ -97,7 +97,7 @@ h1.logo a {
 		backdrop-filter: blur(8px);
 		position: absolute;
 		right: -30%;
-		transition: right .3s ease 0s;
+		transition: .3s;
 	}
 
 	.navigation ul li {
@@ -137,5 +137,19 @@ h1.logo a {
 		height: 50px;
 		line-height: 50px;
 		margin-right: 8%;
+	}
+}
+
+@media (max-width: 640px) {
+	.navigation ul {
+		width: 45%;
+		right: -45%;
+	}
+}
+
+@media (max-width: 440px) {
+	.navigation ul {
+		width: 50%;
+		right: -50%;
 	}
 }

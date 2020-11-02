@@ -39,7 +39,7 @@ function setStylesForMobile() {
 	}
 
 	navigation.style.display = 'none';
-	show_nav_btn.style.display = 'block';
+	show_nav_btn.style.display = 'block';  
 }
 
 
@@ -49,15 +49,16 @@ function hideList() {
 	}
 
 	row_back.style.display = 'none';
+	let width = navigation_list.offsetWidth;
 
 	let timer = setTimeout(() => {
-		navigation_list.style.right = '-30%';
+		navigation_list.style.right = `-${width}px`;
 	}, 30);
 
 	let timer2 = setTimeout(() => {
 		show_nav_btn.style.display = 'block';
 		navigation.style.display = 'none';
-	}, 270);
+	}, 90);
 
 	document.body.style.overflow = 'scroll';
 }
