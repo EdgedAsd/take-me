@@ -13,31 +13,37 @@
 	<link rel="stylesheet" href="styles/search.css">
 	<link rel="stylesheet" href="styles/greece_slider.css">
 	<link rel="stylesheet" href="styles/cities.css">
+	<link rel="stylesheet" href="styles/activities.css">
+	<link rel="stylesheet" href="styles/contact_form.css">
+	<link rel="stylesheet" href="styles/footer.css">
 
 </head>
 <body>
 		
 	<header class="header_logo_navigation">
-		<h1 class="logo">TakeMe</h1>
+		<h1 class="logo"><a href="">TakeMe</a></h1>
 		<nav class="navigation">
+			<div class="row_back">
+				<i class="fa fa-arrow-right" aria-hidden="true"></i>
+			</div>
 			<ul>
-				<li>
-					<a href="">Location</a>
+				<li id="first_header_item">
+					<a href="#location">Location</a>
 				</li>
 				<li>
 					<a href="">Accomodation</a>
 				</li>
 				<li>
-					<a href="">Travel Guides</a>
+					<a href="#activities">Travel Guides</a>
 				</li>
 				<li>
-					<a href="">Where To Stay</a>
+					<a href="#cities">Where To Stay</a>
 				</li>
 				<li>
-					<a href="">Contact&nbsp;Us</a>
+					<a href="#contact_form">Contact&nbsp;Us</a>
 				</li>
-				<li>
-					<a href="">Log&nbsp;In</a>
+				<li id="last_header_item">
+					<a href="#footer">Log&nbsp;In</a>
 				</li>
 			</ul>
 		</nav>
@@ -47,7 +53,7 @@
 		</div>
 	</header>
 
-	<header class="header_search">
+	<header class="header_search" id="location">
 		<div class="header_text">
 			<h2>Find Your Dream Vacation Location</h2>
 			<h6>Search hundreds of locations from around the world and find your perfect vacation location</h6>
@@ -66,7 +72,7 @@
 			<h6>Candy-colored houses carved into cliffs, sapphire waters, 
 				gleaming white buildings topped with half-spheres<br />
 				the color of a stormy sky</h6>
-			<a href="">Explore more</a>
+			<a href="" class="explore_btn">Explore more</a>
 		</div>
 		<div class="slider">
 			<ul>
@@ -84,7 +90,7 @@
 		</div>
 	</section>
 
-	<section class="cities">
+	<section class="cities" id="cities">
 		<ul class="cities_list">
 			<li>
 				<a href="">
@@ -123,8 +129,8 @@
 				<a href="">
 					<img src="images/newyork.jpg" alt="">
 					<h4>Famous New York</h4>
-					<p class="city_description">City of fashion and yellow cabs, one of the most famous cities in the world is waiting to be explored. Some of the most famous museums, food and 
-					landmarks are waiting for you in New York.</p>
+					<p class="city_description">City of fashion and yellow cabs, one of the most famous cities in the world is waiting to be explored. 
+					Some of the most famous museums, food and landmarks are waiting for you in New York.</p>
 					<div class="cities_rating">
 						<i class="fa fa-star" aria-hidden="true"></i>
 						<i class="fa fa-star" aria-hidden="true"></i>
@@ -138,86 +144,190 @@
 		</ul>
 	</section>
 
+	<section class="activities" id="activities">
+		<div class="left_btn"></div>
+		<div class="activity_wrapper">
+			<ul class="activity_list">
+				<li id="mountain">
+					<a class="activity_wall" href="">
+						<h4>Mountain Climbs</h4>
+						<p class="activity_description">Safe Guides</p>
+						<div class="activity_rating">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<p>241 Visited</p>
+						</div>
+					</a>
+				</li>
+				<li id="diving">
+					<a class="activity_wall" href="">
+						<h4>Scuba Diving</h4>
+						<p class="activity_description">Breathtaking View</p>
+						<div class="activity_rating">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<p>288 Visited</p>
+						</div>
+					</a>
+				</li>
+				<li id="snowboard">
+					<a class="activity_wall" href="">
+						<h4>Snowboarding</h4>
+						<p class="activity_description">Experienced Trainers</p>
+						<div class="activity_rating">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<p>167 Visited</p>
+						</div>
+					</a>
+				</li>
+				<li id="sea">
+					<a class="activity_wall" href="">
+						<h4>Sea Voyages</h4>
+						<p class="activity_description">Professional Guides</p>
+						<div class="activity_rating">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<p>125 Visited</p>
+						</div>
+					</a>
+				</li>
+				<li id="rides">
+					<a class="activity_wall" href="">
+						<h4>Quad Rides</h4>
+						<p class="activity_description">Expert Drivers</p>
+						<div class="activity_rating">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<p>296 Visited</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="right_btn"></div>
+	</section>
+
+	<section class="contact_form_section" id="contact_form">
+		<div class="contact_form">
+			<h2 class="form_title">Contact Us</h2>
+			<form action="">
+				<ul>
+					<li>
+						<label for="">First Name</label>
+						<input type="text" placeholder="First Name">
+					</li>
+					<li>
+						<label for="">Last Name</label>
+						<input type="text" placeholder="Last Name">
+					</li>
+					<li>
+						<label for="">Email</label>
+						<input type="text" placeholder="Email">
+					</li>
+					<li>
+						<label for="">Phone</label>
+						<input type="text" placeholder="Phone">
+					</li>
+					<li>
+						<label for="">Message</label>
+						<input type="text" placeholder="Message">
+					</li>
+				</ul>
+				<input type="submit" class="send_btn" value="Send">
+			</form>
+		</div>
+		<div class="form_image"></div>
+	</section>
+
+	<footer class="main_footer" id="footer">
+		<div class="footer_wrapper">
+			<ul class="main_footer_list">
+				<li class="footer_category">
+					<h6>Company</h6>
+					<ul class="footer_category_list">
+						<li><a href="">About Us</a></li>
+						<li><a href="">Careers</a></li>
+						<li><a href="">Contact Us</a></li>
+						<li><a href="">Affiliates</a></li>
+						<li><a href="">News</a></li>
+						<li><a href="">Our App</a></li>
+						<li><a href="">Site Map</a></li>
+					</ul>
+				</li>
+				<li class="footer_category">
+					<h6>Useful Links</h6>
+					<ul class="footer_category_list">
+						<li><a href="">Travel Safe</a></li>
+						<li><a href="">Stay Healthy</a></li>
+						<li><a href="">Flight Monitor</a></li>
+						<li><a href="">Booking List</a></li>
+						<li><a href="">Lost Lugage</a></li>
+						<li><a href="">World Clock</a></li>
+					</ul>
+				</li>
+				<li class="footer_category" id="last_category">
+					<h6>For Companies</h6>
+					<ul class="footer_category_list">
+						<li><a href="">Advertise With Us</a></li>
+						<li><a href="">How It Works</a></li>
+						<li><a href="">Pricing Models</a></li>
+						<li><a href="">VAT Numbers</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="stay_in_touch">
+				<h6>Stay In Touch</h6>
+				<form action="">
+					<input type="text" class="email_contact" placeholder="Your Email">
+					<input type="submit" name="" id="send_btn_email" value="Subscribe">
+				</form>
+				<ul class="social">
+					<li>
+						<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<footer class="footer_meta">
+			<p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 TakeMe Free UI Kit</p>
+			<ul class="meta_links">
+				<li><a href="">Privacy Policy</a></li>
+				<li><a href="">Terms Of Use</a></li>
+				<li><a href="">Cookies Policy</a></li>
+			</ul>
+		</footer>
+	</footer>
+
 </body>
 
-<script>
+<script type="text/javascript" src="scripts/important.js"></script>
+<script type="text/javascript" src="scripts/header_nav_list.js"></script>
+<script type="text/javascript" src="scripts/greece_slider.js"></script>
+<script type="text/javascript" src="scripts/activity_slider.js"></script>
 
-	window.onresize = function() {
-		if (document.body.clientWidth <= 767) {
-			images_on_screen = 2;
-		}
-		else {
-			images_on_screen = 3;
-		}
-		setSizes();
-	}
-
-	function setSizes() {
-		let slider_wrapper = document.querySelector('.slider');
-		imageMargin = slider_wrapper.offsetWidth/100;
-		images.forEach((img, num, images) => {
-			img.style.width = slider_wrapper.offsetWidth/images_on_screen + 'px';
-			img.style.marginRight = imageMargin + 'px';
-		});
-		
-		if (document.body.clientWidth <= 1024) {
-			slider.style.height = '250px';
-		}
-		else if (document.body.clientWidth < 1100) {
-			slider.style.height = '340px';
-		}
-		else if (document.body.clientWidth < 1200) {
-			slider.style.height = '380px';
-		}
-		else if (document.body.clientWidth < 1250) {
-			slider.style.height = '400px';
-		}
-		else {
-			slider.style.height = '420px';
-		}
-	}
-	
-	// Slider
-	let slider_point = 0;
-	let images_on_screen = 3;
-	let slider = document.querySelector('.slider ul');
-	let images = Array.prototype.slice.call(slider.children, 0);  // Collection to array
-	let imageMargin;
-
-	setSizes();
-
-	// Slider points 
-	let points = document.getElementsByClassName('points')[0];
-
-	for (let pt = 0; pt <= images.length-images_on_screen; pt++) {
-		let new_point = document.createElement('button');
-		new_point.classList.add('point');
-		new_point.onclick = function() {
-			slider_point = points_classes.indexOf(this);
-			slide();
-			clearInterval(sliderTimer);
-			sliderTimer = setInterval(slide, 2000);
-		}
-		points.append(new_point);
-	}
-
-	let points_classes = Array.prototype.slice.call(points.children, 0);
-
-	function slide() {
-		if (slider_point>5) {
-			slider_point = 0;
-		}
-		let pos = -slider_point*(imageMargin + images[0].offsetWidth);
-		slider.style.marginLeft = pos+'px';
-		points_classes = points_classes.map((pt) => {
-			pt.classList.remove('active_point');
-			return pt;
-		})
-		points.children[slider_point].classList.add('active_point');
-		slider_point++;
-	}
-
-	let sliderTimer = setInterval(slide, 2000);
-
-</script>
 </html>

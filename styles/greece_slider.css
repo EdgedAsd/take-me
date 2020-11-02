@@ -1,5 +1,5 @@
 .greece_slider {
-	background-color: #fff;
+	background-color: #f6f6f6;
 	height: 600px;
 	width: 100%;
 	margin-top: 20px;
@@ -28,7 +28,7 @@
 	font-size: 1em;
 }
 
-.slider_text a {
+.slider_text .explore_btn {
 	width: 67%;
 	background-color: #3ec6ff;
 	font-family: Roboto, sans-serif;
@@ -39,6 +39,15 @@
 	height: 50px;
 	line-height: 50px;
 	border-radius: 8px;
+	transition: .3s;
+}
+
+.slider_text .explore_btn:hover {
+	box-shadow: 0 0 10px 2px rgba(62, 198, 255, .7);
+}
+
+.slider_text .explore_btn:active {
+	box-shadow: 0 0 40px 2px rgba(62, 198, 255, .7);
 }
 
 .slider {
@@ -49,7 +58,6 @@
 }
 
 .slider ul {
-	width: 100%;
 	height: 420px;
 	width: 9999px;
 	transition: 1s;
@@ -122,6 +130,7 @@
 	margin-right: 10px;
 	border: none;
 	outline: none;
+	cursor: pointer;
 }
 
 .active_point {
@@ -130,20 +139,19 @@
 }
 
 
-
-@media (max-width: 1330px) {
+@media (max-width: 1440px) {
 	.slider_text {
 		padding-top: 100px;
 	}
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 1200px) {
 	.greece_slider {
 		height: 500px;
 	}
 
 	.slider_text {
-		padding-top: 50px;
+		padding-top: 70px;
 	}
 
 	.slider_text h2 {
@@ -157,12 +165,12 @@
 
 @media (max-width: 1024px) {
 	.greece_slider {
-		height: 540px;
+		height: auto;
 	}
 
 	.slider_text {
 		float: none;
-		padding-top: 20px;
+		padding-top: 50px;
 		width: 100%;
 		margin: 0;
 	}
@@ -170,6 +178,7 @@
 	.slider_text h2 {
 		font-size: 2.4em;
 		text-align: center;
+		padding: 0 5%;
 	}
 
 	.slider_text h6 {
@@ -179,16 +188,15 @@
 		text-align: center;
 	}
 
-	.slider_text a {
-		margin: auto;
-		margin-top: 20px;
+	.slider_text .explore_btn {
+		margin: 40px auto;
 		width: 40%;
 	}
 
 	.slider {
 		float: none;
 		width: 80%;
-		margin: 20px auto 0 auto;
+		margin: 40px auto 0 auto;
 	}
 
 	.points {
@@ -199,10 +207,14 @@
 }
 
 @media (max-width: 768px) {
-	.greece_slider {
-		height: 520px;
-	}
 
+}
+
+@media (max-width: 640px) {
+
+}
+
+@media (max-width: 440px) {
 	.slider_text h2 {
 		font-size: 2em;
 	}
@@ -211,25 +223,9 @@
 		font-size: .8em;
 	}
 
-	.slider_text a {
-		height: 35px;
-		line-height: 35px;
-	}
-}
-
-@media (max-width: 640px) {
-	.slider_text h2 {
-		font-size: 1.7em;
-	}
-
-	.slider_text h6 {
-		font-size: .7em;
-	}
-}
-
-@media (max-width: 375px) {
-	.slider_text a {
-		height: 25px;
-		line-height: 25px;
+	.slider_text .explore_btn {
+		font-size: 0.8em;
+		height: 40px;
+		line-height: 40px;
 	}
 }

@@ -1,16 +1,14 @@
 .cities {
-	background-color: #fff;
-	height: 45vw;
+	background-color: #f6f6f6;
 	margin-top: 20px;
 	width: 100%;
 }
 
 ul.cities_list {
-	padding-top: 6vw;
-	width: 84%;
+	padding: 6vw 0;
+	width: 84vw;
 	margin: auto;
-	/*height: 475px;*/
-	height: 34vw;
+	height: calc(34vw + 6px);
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -21,8 +19,14 @@ ul.cities_list {
 
 ul.cities_list li {
 	height: 100%;
-	width: 26vw;
+	width: 32%;
 	font-family: Roboto, sans-serif;
+	transition: .3s;
+	padding: 3px;
+}
+
+ul.cities_list li:hover {
+	box-shadow: 2px 1px 3px 4px #ccc;
 }
 
 ul.cities_list li a {
@@ -48,7 +52,6 @@ ul.cities_list li p {
 }
 
 .city_description {
-	height: 100px;
 	margin-bottom: 40px;
 }
 
@@ -66,94 +69,96 @@ ul.cities_list li i {
 	float: right;
 }
 
-/*.cities_rating i {
-	font-size: calc(.9em + .2vw);
-}*/
 
+@media (max-width: 1440px) {
+	ul.cities_list {
+		padding: 5vw 0;
+	}
 
-
-@media (max-width: 1150px) {
 	ul.cities_list li h4 {
-		margin: 10px 0;
+		margin: 15px 0;
+		font-size: calc(.8em + 1vw);
 	}
+
 	ul.cities_list li p {
-		font-size: calc(.8em + .2vw);
+		font-size: calc(.7em + .2vw);
 	}
+
 	.city_description {
 		margin-bottom: 20px;
-	}
-
-	.cities_rating i {
-		font-size: calc(.8em + .2vw);
 	}
 }
 
 @media (max-width: 1024px) {
-	ul.cities_list li p {
-		font-size: calc(.6em + .2vw);
+	ul.cities_list li h4 {
+		margin: 15px 0;
+		font-size: calc(.6em + 1vw);
 	}
 
-	ul.cities_list li h4 {
-		font-size: calc(1em + 1vw);
+	ul.cities_list li p {
+		font-size: calc(.5em + .1vw);
 	}
 
 	.city_description {
-		height: 70px;
 		margin-bottom: 10px;
+	}
+
+	.cities_rating {
+		height: 15px;
+		line-height: 15px;
+	}
+
+	.cities_rating i {
+		font-size: 0.8em;
 	}
 }
 
 @media (max-width: 768px) {
+	ul.cities_list {
+		padding: 3vw 0;
+	}
+
+	ul.cities_list li h4 {
+		margin: 10px 0;
+		font-size: calc(.5em + 1vw);
+	}
+
+	ul.cities_list li p {
+		font-size: calc(.4em + .1vw);
+	}
+
+	ul.cities_list li i {
+		font-size: calc(.5em + .1vw);
+	}
+}
+
+@media (max-width: 640px) {
 	.cities {
 		height: auto;
 	}
 
 	ul.cities_list {
-		width: 60%;
 		display: block;
 		height: auto;
+		width: 60%;
+		padding: 5vw 0;
 	}
 
 	ul.cities_list li {
-		display: block;
+		height: auto;
 		width: 100%;
-		height: auto;
-	}
-
-	ul.cities_list li p {
-		font-size: calc(.9em + .2vw);
+		margin-bottom: 30px;
 	}
 
 	ul.cities_list li h4 {
 		font-size: calc(1em + 1vw);
 	}
 
-	.city_description {
-		height: auto;
-	}
-
-	.cities_rating {
-		margin-bottom: 20px;
-	}
-}
-
-
-@media (max-width: 425px) {
 	ul.cities_list li p {
-		font-size: calc(.6em + .2vw);
-	}
-	ul.cities_list li h4 {
-		font-size: calc(1em + 1vw);
+		font-size: calc(.8em + .2vw);
 	}
 }
 
-@media (max-width: 375px) {
-	.cities_rating p {
-		float: none;
-		display: block;
-	}
+@media (max-width: 440px) {
 
-	.cities_rating {
-		height: auto;
-	}
 }

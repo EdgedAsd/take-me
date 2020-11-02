@@ -1,0 +1,218 @@
+.activities {
+	background-color: #f6f6f6;
+	width: 100%;
+	margin-top: 20px;
+	position: relative;
+}
+
+.activity_wrapper {
+	position: relative;
+	width: 84%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.left_btn, .right_btn {
+	height: 10%;
+	position: absolute;
+	width: 2%;
+	top: 45%;
+	cursor: pointer;
+}
+
+.left_btn {
+	left: 5%;
+	background: url('../images/arrow_left.png') center center no-repeat;
+}
+
+.right_btn {
+	right: 5%;
+	background: url('../images/arrow_right.png') center center no-repeat;
+}
+
+.activity_list {
+	font-size: 0;
+	height: 100%;
+	position: relative;
+	left: -34%;
+}
+
+.activity_list li {
+	position: absolute;
+	top: 0;
+	display: block;
+	margin: 0;
+}
+
+.activity_list li:hover .activity_wall {
+	opacity: 0;
+}
+
+#sea {
+	background: url('../images/sea.jpg') top center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#diving {
+	background: url('../images/diving.jpg') top center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#snowboard {
+	background: url('../images/snowboard.jpg') top center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#mountain {
+	background: url('../images/mountain.jpg') top center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#rides {
+	background: url('../images/rides.jpg') top center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.activity_wall {
+	background-color: rgba(0,0,0,.4);
+	width: 100%;
+	height: 100%;
+	font-family: Roboto;
+	position: relative;
+	display: block;
+	transition: 1s;
+}
+
+.activity_wall h4 {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;	
+	font-size: 40px;
+	color: #fff;
+	font-weight: 400;
+}
+
+.activity_wall .activity_description {
+	position: absolute;
+	bottom: 70px;
+	left: 20px;	
+	font-size: 15px;
+	color: #fff;
+	font-weight: 200;
+}
+
+.activity_wall .activity_rating {
+	font-size: 15px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	color: rgb(250,157,76);
+}
+
+.activity_wall .activity_rating p {
+	position: absolute;
+	right: 0;
+	top: 25px;
+	color: #fff;
+}
+
+
+@media (max-width: 1440px) { 
+	.activity_wall h4 {
+		font-size: 32px;
+	}
+}
+
+@media (max-width: 1200px) { 
+	.activity_wall h4 {
+		font-size: 28px;
+	}
+
+	.activity_wall .activity_description {
+		font-size: 12px;
+	}
+
+	.activity_wall .activity_rating {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 1024px) { 
+	.activity_wall h4 {
+		font-size: 22px;
+		bottom: 10px;
+	}
+
+	.activity_wall .activity_description {
+		bottom: 40px;
+		font-size: 10px;
+	}
+
+	.activity_wall .activity_rating {
+		font-size: 10px;
+		top: 10px;
+	}
+
+	.activity_wall .activity_rating p {
+		top: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.activity_list {
+		left: -51%;
+	}
+}
+
+@media (max-width: 640px) {
+	.activity_wall h4 {
+		left: 10px;
+		font-size: 18px;
+	}
+
+	.activity_wall .activity_description {
+		left: 10px;
+	}
+
+	.activity_wall .activity_rating {
+		right: 10px;
+	}
+
+	.left_btn, .right_btn {
+		width: 4%;
+	}
+
+	.left_btn {
+		left: 3%;
+	}
+
+	.right_btn {
+		right: 3%;
+	}
+}
+
+@media (max-width: 440px) {
+	.activity_wall h4 {
+		bottom: 5px;
+		font-size: 14px;
+	}
+
+	.activity_wall .activity_description {
+		bottom: 25px;
+		font-size: 7px;
+	}
+
+	.activity_wall .activity_rating {
+		font-size: 7px;
+		top: 5px;
+	}
+
+	.activity_wall .activity_rating p {
+		top: 10px;
+	}
+}

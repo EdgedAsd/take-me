@@ -1,7 +1,7 @@
 .header_logo_navigation {
 	height: 115px;
 	width: 100%;
-	background-color: #fff;
+	background-color: #f6f6f6;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -13,10 +13,13 @@
 
 h1.logo {
 	font-family: Kaushan, arial;
-	color: #3ec6ff;
 	display: flex;
 	margin: auto 0 auto 8%;
 	font-size: 270%;
+}
+
+h1.logo a {
+	color: #3ec6ff;
 }
 
 .show_nav_btn {
@@ -31,6 +34,17 @@ h1.logo {
 	display: flex;
 	margin: auto 8% auto 0;
 	width: 57%;
+}
+
+.row_back {
+	display: none;
+	right: 20px;
+	top: 20px;
+	position: absolute;
+	z-index: 5;
+	color: #fff;
+	font-size: 1em;
+	padding: 4px;
 }
 
 .navigation ul {
@@ -54,6 +68,7 @@ h1.logo {
 .navigation li a {
 	font-family: Roboto, sans-serif;
 	font-size: 1.27vw;
+	transition: .3s;
 }
 
 .navigation li a:hover {
@@ -61,11 +76,51 @@ h1.logo {
 }
 
 
-
+@media (max-width: 1024px) { 
+	h1.logo {
+		font-size: 230%;
+	}
+}
 
 @media (max-width: 768px) {
 	.navigation {
 		display: none;
+	}
+
+	.navigation ul {
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		width: 30%;
+		height: 100%;
+		background-color: rgba(215,215,215,.5);
+		backdrop-filter: blur(8px);
+		position: absolute;
+		right: -30%;
+		transition: right .3s ease 0s;
+	}
+
+	.navigation ul li {
+		width: 70%;
+		margin: 0 auto 10px auto !important;
+		padding: 10px 5px 10px 5px;
+		text-align: center;
+		transition: .3s;
+	}
+
+	#last_header_item {
+		margin-bottom: 0;
+	}
+
+	.navigation ul li:hover {
+		background-color: rgba(255,255,255,.4);
+		border: 1px solid #fff;
+		border-radius: 8px;
+	}
+
+	.navigation li a {
+		color: #fff;
+		font-size: 1em;
 	}
 
 	h1.logo {
@@ -74,7 +129,6 @@ h1.logo {
 
 	.header_logo_navigation {
 		height: 50px;
-		position: sticky;
 	}
 
 	.show_nav_btn {
