@@ -2,10 +2,6 @@
 	height: 115px;
 	width: 100%;
 	background-color: #f6f6f6;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
 	position: relative;
@@ -27,10 +23,6 @@ h1.logo a {
 }
 
 .navigation {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	margin: auto 8% auto 0;
 	width: 57%;
@@ -49,10 +41,6 @@ h1.logo a {
 
 .navigation ul {
 	width: 100%;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
 }

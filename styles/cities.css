@@ -9,10 +9,6 @@ ul.cities_list {
 	width: 84vw;
 	margin: auto;
 	height: calc(34vw + 6px);
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
 }
@@ -157,8 +153,4 @@ ul.cities_list li i {
 	ul.cities_list li p {
 		font-size: calc(.8em + .2vw);
 	}
-}
-
-@media (max-width: 440px) {
-
 }

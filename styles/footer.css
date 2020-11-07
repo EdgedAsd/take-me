@@ -9,10 +9,6 @@
 	padding-top: 80px;
 	margin: auto;
 	width: 84%;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
 }
@@ -134,14 +130,9 @@
 
 .footer_meta {
 	height: 90px;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	border-top: 1px solid #e2e2e2;
 	justify-content: space-between;
-	-ms-align-items: center;
 	align-items: center;
 	width: 84%;
 	margin: 40px auto 0 auto;
@@ -149,10 +140,6 @@
 }
 
 .meta_links {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	justify-content: flex-end;
 	width: 60%;

@@ -70,50 +70,42 @@
 }
 
 #image1 {
-	background: url('../images/santorini1.jpg') top center no-repeat;
-	-webkit-background-size: cover;
+	background: url('../images_min/santorini1.jpg') top center no-repeat;
 	background-size: cover;
 }
 
 #image2 {
-	background: url('../images/santorini2.jpg') top center no-repeat;
-	-webkit-background-size: cover;
+	background: url('../images_min/santorini2.jpg') top center no-repeat;
 	background-size: cover;
 }
 
 #image3 {
-	background: url('../images/santorini3.jpg') top center no-repeat;
-	-webkit-background-size: cover;
+	background: url('../images_min/santorini3.jpg') top center no-repeat;
 	background-size: cover;
 }
 
 #image4 {
-	background: url('../images/santorini4.jpg') top center no-repeat;
-	-webkit-background-size: cover;
+	background: url('../images_min/santorini4.jpg') top center no-repeat;
 	background-size: cover;
 }
 
 #image5 {
-	background: url('../images/santorini5.jpg') top center no-repeat;
-	-webkit-background-size: cover;
+	background: url('../images_min/santorini5.jpg') top center no-repeat;
 	background-size: cover;
 }
 
 #image6 {
-	background: url('../images/santorini6.jpg') top center no-repeat;
-	-webkit-background-size: cover;
+	background: url('../images_min/santorini6.jpg') top center no-repeat;
 	background-size: cover;
 }
 
 #image7 {
-	background: url('../images/santorini7.jpg') top center no-repeat;
-	-webkit-background-size: cover;
+	background: url('../images_min/santorini7.jpg') top center no-repeat;
 	background-size: cover;
 }
 
 #image8 {
-	background: url('../images/santorini8.jpg') top center no-repeat;
-	-webkit-background-size: cover;
+	background: url('../images_min/santorini8.jpg') top center no-repeat;
 	background-size: cover;
 }
 
@@ -204,14 +196,6 @@
 		text-align: center;
 		clear: both;
 	}
-}
-
-@media (max-width: 768px) {
-
-}
-
-@media (max-width: 640px) {
-
 }
 
 @media (max-width: 440px) {

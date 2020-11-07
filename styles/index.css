@@ -1,11 +1,13 @@
 @font-face {
 	font-family: "Kaushan";
 	src: url("../fonts/kaushan_script.ttf");
+	font-display: swap;
 }
 
 @font-face {
 	font-family: "Roboto";
 	src: url("../fonts/roboto.ttf");
+	font-display: swap;
 }
 
 html, body {

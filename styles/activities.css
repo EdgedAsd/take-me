@@ -22,12 +22,12 @@
 
 .left_btn {
 	left: 5%;
-	background: url('../images/arrow_left.png') center center no-repeat;
+	background: url('../images_min/arrow_left.png') center center no-repeat;
 }
 
 .right_btn {
 	right: 5%;
-	background: url('../images/arrow_right.png') center center no-repeat;
+	background: url('../images_min/arrow_right.png') center center no-repeat;
 }
 
 .activity_list {
@@ -49,32 +49,27 @@
 }
 
 #sea {
-	background: url('../images/sea.jpg') top center no-repeat;
-	-webkit-background-size: cover;
+	background: url('../images_min/sea.jpg') top center no-repeat;
 	background-size: cover;
 }
 
 #diving {
-	background: url('../images/diving.jpg') top center no-repeat;
-	-webkit-background-size: cover;
+	background: url('../images_min/diving.jpg') top center no-repeat;
 	background-size: cover;
 }
 
 #snowboard {
-	background: url('../images/snowboard.jpg') top center no-repeat;
-	-webkit-background-size: cover;
+	background: url('../images_min/snowboard.jpg') top center no-repeat;
 	background-size: cover;
 }
 
 #mountain {
-	background: url('../images/mountain.jpg') top center no-repeat;
-	-webkit-background-size: cover;
+	background: url('../images_min/mountain.jpg') top center no-repeat;
 	background-size: cover;
 }
 
 #rides {
-	background: url('../images/rides.jpg') top center no-repeat;
-	-webkit-background-size: cover;
+	background: url('../images_min/rides.jpg') top center no-repeat;
 	background-size: cover;
 }
 
